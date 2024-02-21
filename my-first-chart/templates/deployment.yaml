@@ -5,9 +5,9 @@ kind: Deployment
 
   {{ $myvar }}
 
-  {{- with .Values.customblock.author.name }}
+  {{- range .Values.customblock.author.name }}
   author:
-  {{- toYaml . | nindent 4 }}
+    - {{ . }}
   {{- end }}
 
 metadata:

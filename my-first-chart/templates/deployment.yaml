@@ -1,13 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
-  # {{ .Values.ingress.enabled }}
-  # {{ $myvar := true }}
-
-  # {{ $myvar }}
-{{- range .Values.customblock.author.name }}
-  author:
+  {{- range .Values.customblock.author.name }}
+   author:
     - {{ . }}
-{{- end }}
+  {{- end }}
 
 metadata:
   name: {{ include "my-first-chart.fullname" . }}

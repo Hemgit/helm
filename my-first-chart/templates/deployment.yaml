@@ -5,6 +5,11 @@ kind: Deployment
 
   {{ $myvar }}
 
+  {{- with .Values.customblock.author.name }}
+    author:
+  {{- toYaml . | nindent 4}}
+  {{- end -}}
+
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:

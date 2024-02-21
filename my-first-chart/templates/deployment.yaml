@@ -1,10 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
-  {{- range .Values.customblock.author.name }}
-   author:
+{{- range .Values.customblock.author.name }}
+  author:
     - {{ . }}
-  {{- end }}
-
+{{- end }}
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:

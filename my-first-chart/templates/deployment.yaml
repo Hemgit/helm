@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+  {{ .Values.ingress.enabled }}
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:

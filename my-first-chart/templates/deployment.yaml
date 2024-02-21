@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+  {{ .Values.hosts.host }}
 metadata:
   name: {{ include "my_first_chart.fullname" . }}
   labels:

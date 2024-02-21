@@ -5,10 +5,10 @@
 customblock:
   author:
     name:
-    - "suresh"
-    - "ramesh"
-    - "giresh"
-    - "naresh"
+      - "suresh"
+      - "ramesh"
+      - "giresh"
+      - "naresh"
 
 
 replicaCount: 1

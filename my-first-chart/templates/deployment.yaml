@@ -1,10 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
-  {{ .Values.ingress.enabled }}
-  {{ $myvar := true }}
+  # {{ .Values.ingress.enabled }}
+  # {{ $myvar := true }}
 
-  {{ $myvar }}
-
+  # {{ $myvar }}
   {{- range .Values.customblock.author.name }}
   author:
     - {{ . }}

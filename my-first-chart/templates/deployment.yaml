@@ -4,10 +4,10 @@ kind: Deployment
   # {{ $myvar := true }}
 
   # {{ $myvar }}
-  {{- range .Values.customblock.author.name }}
+{{- range .Values.customblock.author.name }}
   author:
     - {{ . }}
-  {{- end }}
+{{- end }}
 
 metadata:
   name: {{ include "my-first-chart.fullname" . }}

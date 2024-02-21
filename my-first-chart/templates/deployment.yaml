@@ -3,7 +3,7 @@ kind: Deployment
   {{ .Values.ingress.enabled }}
   {{ $myvar := true }}
 
-  {{ my var is $myvar }}
+  {{ "my var is $myvar" }}
 
 metadata:
   name: {{ include "my-first-chart.fullname" . }}

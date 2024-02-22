@@ -114,9 +114,9 @@ mysql:
     database: "my_database"
     username: "customuser"
     password: "test12345"
-    primary:
-      service:
-        type: NodePort
+  primary:
+    service:
+      type: NodePort
 
 
 

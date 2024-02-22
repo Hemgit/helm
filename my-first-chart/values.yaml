@@ -118,7 +118,7 @@ mysql:
       service:
         type: NodePort
         NodePorts:
-        - nodePort: 31025
+
 
 rabbitmq:
   enabled: true

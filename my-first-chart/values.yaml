@@ -117,7 +117,7 @@ mysql:
     primary:
       service:
         type: NodePort
-        NodePorts:
+
 
 
 # rabbitmq:
